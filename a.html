@@ -6,15 +6,18 @@
 </head>
 <body>
 <input id="a" type="number" placeholder="nhập độ dài cạnh hình vuông">
+<button onclick="check()" id="check" type="submit">Check</button>
 <p id="chuvi"></p>
 <p id="dientich"></p>
 
 </body>
 </html>
 <script>
-    let a = document.getElementById("a").value
-    let chuvi = a*4
-    let dientich = Math.pow(a, 2)
-    document.getElementById("chuvi").innerHTML = "Chu vi là "+chuvi
-    document.getElementById("dientich").innerHTML = "Diện tích là "+dientich
+    function check() {
+        let a = document.getElementById("a").value
+        let chuvi = a*4
+        let dientich = Math.pow(a, 2)
+        document.getElementById("chuvi").innerHTML = "Chu vi là "+chuvi
+        document.getElementById("dientich").innerHTML = "Diện tích là "+dientich
+    }
 </script>
