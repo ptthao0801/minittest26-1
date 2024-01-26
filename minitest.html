@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // bài 1: câu lệnh alert
+    alert("Phan Thanh Thảo")
+    // bài 2: dùng prompt đ nhận giá trị từ hộp thoại
+    let hopthoai = prompt("Nhập số")
+    let sobinhphuong = parseInt(hopthoai)
+    let binhphuong = Math.pow(sobinhphuong, 2)
+    alert("Số bình phương là " + sobinhphuong)
+
+    // bài 3:
+    // B1: ở thẻ <body>, tạo 2 thẻ <input> cho a, b và thẻ <h1> cho result như sau
+    // <input type="number" placeholder="số a">
+    // <input type="number" placeholder="số b">
+    // <h1 id="result"></h1>
+    // B2: ở <script>, gắn giá trị cho a, b, s
+        // gắn a với input có id = "a"
+    let a = document.getElementById("a").value
+        // gắn b với input có id = "b"
+    let b = document.getElementById("b").value
+        // gán s
+    let s = a*b
+    // B3: hiển thị result ra h1
+    document.getElementById("result").innerHTML = "S = "+s
+
+    // Bài 4: trong các file html tương ứng
+</script>

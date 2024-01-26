@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="number" placeholder="nhập a (số bé)">
+<input id="b" type="number" placeholder="nhập b (số lớn)">
+<p id="tong"></p>
+
+</body>
+</html>
+<script>
+    let a = document.getElementById("a").value
+    let b = document.getElementById("b").value
+    let tong = (a+b)*(b-a+1)/2
+    document.getElementById("tong").innerHTML = "Tổng các số từ a đến b là "+tong
+</script>

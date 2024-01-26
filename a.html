@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="number" placeholder="nhập độ dài cạnh hình vuông">
+<p id="chuvi"></p>
+<p id="dientich"></p>
+
+</body>
+</html>
+<script>
+    let a = document.getElementById("a").value
+    let chuvi = a*4
+    let dientich = Math.pow(a, 2)
+    document.getElementById("chuvi").innerHTML = "Chu vi là "+chuvi
+    document.getElementById("dientich").innerHTML = "Diện tích là "+dientich
+</script>
