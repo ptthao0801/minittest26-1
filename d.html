@@ -13,27 +13,7 @@
 <script>
     function check() {
         let nam = document.getElementById("nam").value
-        if (nam<2100) {
-            if (nam<2000) {
-                if (nam<1900) {
-                    if (nam<1800) {
-                        if (nam<1700) {
-                            document.getElementById("theky").innerHTML = "Thế kỷ 17"
-                        } else {
-                            document.getElementById("theky").innerHTML = "Thế kỷ 18"
-                        }
-                    } else {
-                        document.getElementById("theky").innerHTML = "Thế kỷ 19"
-                    }
-                } else {
-                    document.getElementById("theky").innerHTML = "Thế kỷ 20"
-                }
-            } else {
-                document.getElementById("theky").innerHTML = "Thế kỷ 21"
-            }
-        } else {
-            document.getElementById("theky").innerHTML = "Thế kỷ 22"
-        }
+        let theky = parseInt(nam/100)+1
+        document.getElementById("theky").innerHTML = "Thế kỷ là "+theky
     }
-
 </script>
